@@ -1,0 +1,32 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Category {% endblock title %}
+{% block banner_slider %}
+    <div id="carouselExampleSlidesOnly mt-1"  class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src= "{% static 'images/banner/Innisfree-flagship-online-shop-banner-tofusecret.jpg' %}"  class="d-block w-100" width="50px" height="250px" alt="Banner">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/banner/langie.png' %}" class="d-block w-100"  width="50px" height="150px" alt="Banner">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/banner/COSRX-Banner.jpg' %}" class="d-block w-100" width="50px" height="150px" alt="Banner">
+        </div>
+      </div>
+    </div>
+{% endblock banner_slider  %}
+
+{% block main-content %}
+<div class="container mt-3">
+    <br>
+    <h2 class="text-center">Contact Us:</h2>
+    <br>
+    <div class="row container">
+        <p class="fs-4 text-center">Address: Tilak Ward Society  </p>
+        <p class="fs-4 text-center">Contact: 88778854212 </p>
+        <p class="fs-4 text-center">Email: DivineDew@gmail.com </p>
+    </div>
+</div>
+
+{% endblock main-content %}

@@ -1,0 +1,101 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %} Home {% endblock title %}
+
+{% block banner_slider %}
+    <div id="carouselExampleSlidesOnly mt-1"  class="carousel slide" data-bs-ride="carousel" >
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src= "{% static 'images/banner/Innisfree-flagship-online-shop-banner-tofusecret.jpg' %}"  class="d-block w-100" width="50px" height="250px" alt="Banner">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/banner/langie.png' %}" class="d-block w-100"  width="50px" height="150px" alt="Banner">
+        </div>
+        <div class="carousel-item">
+          <img src="{% static 'images/banner/COSRX-Banner.jpg' %}" class="d-block w-100" width="50px" height="150px" alt="Banner">
+        </div>
+      </div>
+    </div>
+{% endblock banner_slider  %}
+
+{% block information %} 
+<div class="container" >
+  <div class="row text-center p-5 text-black border-bottom shadow" style="background-color: rgb(197, 228, 208);">
+    <h1>Products</h1>
+    <small class="fs-5">We are the pioneer of the K-beauty trend in India. Shop top quality Korean skincare brands and products in a wide range and affordable selection.</small>
+  </div>
+</div>
+{% endblock information %}
+
+{% block main-content %}
+
+<div class="container">
+  <div class="col-md-9">
+    <div class="row">
+      
+        <div class="card mt-1 ms-1" style="width: 15rem;" >
+          <img src="{% static 'images\products\aneige-water-bank-hydro-essence.jpg' %}" class="card-img-top mt-2" alt="essence" height="150px" >
+          <div class="card-body">
+            <h5 class="card-title">laneige hydro-essence</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'category' 'ESS' %}" class="btn btn-primary">Add to Bag</a>
+          </div>
+        </div>
+
+        <div class="card ms-3 mt-1" style="width: 15rem;">
+          <img src="{% static 'images\products\COSRX Hydrium Collection .JPG' %}" class="card-img-top mt-2" alt="shoes" width="150px" height="150px">
+          <div class="card-body">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <a href="{% url 'category' 'MOI}" class="btn btn-primary">Add Cart</a>
+          </div>
+        </div>  
+          <div class="card ms-3 mt-1" style="width: 15rem;">
+            <img src="{% static 'images\products\hyd_cen1_400x.webp' %}" class="card-img-top mt-2" alt="shoes" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="{% url 'category' 'ESS' %}" class="btn btn-primary">Add Cart</a>
+            </div>
+          </div>
+      
+    </div>
+  </div>
+  <br></br>
+  <div class="container">
+    <div class="col-md-9">
+      <div class="row">
+        
+          <div class="card mt-1 ms-1" style="width: 15rem;" >
+            <img src="{% static 'images\products\images.jpeg' %}" class="card-img-top mt-2" alt="essence" height="150px" >
+            <div class="card-body">
+              <h5 class="card-title">laneige hydro-essence</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="{% url 'category' 'SM' %}" class="btn btn-primary">Add to Bag</a>
+            </div>
+          </div>
+  
+          <div class="card ms-3 mt-1" style="width: 15rem;">
+            <img src="{% static 'images/products/images (1).jpeg' %}" class="card-img-top mt-2" alt="shoes" width="150px" height="150px">
+            <div class="card-body">
+              <h5 class="card-title">Card title</h5>
+              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+              <a href="{% url 'category' 'ESS' %}" class="btn btn-primary">Add Cart</a>
+            </div>
+          </div>  
+            <div class="card ms-3 mt-1" style="width: 15rem;">
+              <img src="{% static 'images/products/innisfree-jeju-cherry-blossom-tone-up.jpg' %}" class="card-img-top mt-2" alt="shoes" height="150px">
+              <div class="card-body">
+                <h5 class="card-title">Card title</h5>
+                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                <a href="{% url 'category' 'TR' %}" class="btn btn-primary">Add Cart</a>
+              </div>
+            </div>
+</div>  
+
+<br></br>
+
+
+
+  
+{% endblock main-content %}
